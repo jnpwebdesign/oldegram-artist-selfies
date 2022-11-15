@@ -31,6 +31,7 @@ header {
 /* note: use on subsequent post-containers:  border-top: 25px solid #EDEDED; */
 .post-container {
     height: 545px;
+    border-top: 1px solid lightgray;
 }
 
 .title-container {
@@ -130,14 +131,14 @@ h3 {
    margin-top: 12px;
 }
 
-#comment {
+#post-comment {
     font-weight: 400;
 }
 
 /* emojis */
 
 
-.heart-btn {
+#heart-btn {
     width: 22.3px;
     height: 21.13px;
     background-image: url(images/icon-heart-23px.png);
@@ -145,7 +146,7 @@ h3 {
     border: none;
 }
 
-.heart-btn:active {
+#heart-btn:active {
     background-image: url(images/icon-heart-red-23px.png);
     background-size: cover;
     outline: none;
