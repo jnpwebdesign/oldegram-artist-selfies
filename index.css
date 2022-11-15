@@ -74,6 +74,7 @@ header {
     height: 22.13px;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 /* images */
@@ -133,31 +134,23 @@ h3 {
     font-weight: 400;
 }
 
-/* buttons */
+/* emojis */
 
-.emoji {
 
-}
-
-#heart {
-    width: 23.3px;
-    height: 22.13px;
-    border: 2.33 solid black;
-}
-
-.heart-container {
-    
+.heart-btn {
+    width: 22.3px;
+    height: 21.13px;
     background-image: url(images/icon-heart-23px.png);
-    width: 23.3px;
-    height: 22.13px;
-    ;
+    background-size: cover;
+    border: none;
 }
-.heart-container:hover {
 
+.heart-btn:active {
     background-image: url(images/icon-heart-red-23px.png);
     background-size: cover;
     outline: none;
 }
+
 #comment {
     width: 18.65px;
     height: 18.65px;
@@ -167,3 +160,61 @@ h3 {
     width: 22.38px;
     height: 18.65px;
 }
+
+
+
+/* .heart-shape{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: black;
+  }
+  .heart-shape:before,
+  .heart-shape:after{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: black;
+  }
+  .heart-shape:before{
+    bottom: 0px;
+    left: -6px;
+  }
+  .heart-shape:after{
+    top: -6px;
+    right: 0px;
+  }
+
+  .heart-shape:active{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: red;
+  }
+  .heart-shape:active:before,
+  .heart-shape:active:after{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: red;
+  } */
