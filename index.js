@@ -25,36 +25,79 @@ const posts = [
         post: "images/post-ducreux.jpg",
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
+    },
+    {
+        name: "Julie Napear",
+        username: "julienapearphotography",
+        location: "Winchester, VA",
+        avatar: "images/Julie-Napear-web-developer-photographer-web.jpg",
+        post: "images/Julie-Napear-web-developer-photographer-web.jpg",
+        comment: "Not a great painter, but at least you know she made this code!",
+        likes: 456
     }
 ]
 
 
-const heartBtn = document.getElementById("heart-btn");
-let likeCountNumber = document.getElementById("like-count-number");
+ 
+let postContainer = document.getElementById("post-container");
 
-let posterName = document.getElementById("poster-name");
-let username = document.getElementById("username");
-let posterLocation = document.getElementById("poster-location");
-let posterAvatar = document.getElementById("poster-avatar");
-let postImage = document.getElementById("post-image-container");
-let postComment = document.getElementById("post-comment")
+function addElement(onePost) {
+    const postCode =
+    `<div class="title-container">
+        <div id="poster-avatar">
+            <img src="${onePost.avatar}" class="circle-image" alt="poster's avatar">
+        </div>
+            <div class="title-text-container">
+                <div class="poster-name-container">
+                    <h2 id="poster-name">${onePost.name}</h2>
+                </div>
+                <div class="poster-location-container">
+                    <h3 id="poster-location">${onePost.location}</h3>
+                </div>
+            </div>
+        </div>
+    <div id="post-image-container">
+        <img class="post-image" src="${onePost.post}" alt="poster's self-portrait">           
+    </div>
+    <div class="reactions-container">
+        <div class="emoji-container">
+            <button id="heart-btn"></button>
+            <img src="images/icon-comment.png" class="emoji" id="comment">
+            <img src="images/icon-dm.png" class="emoji" id="airplane">
+        </div>
+        <p class="like-count"><span id="like-count-number"></span> likes</p>
+        <p id="username">${onePost.username} <span id="post-comment">${onePost.comment}</span></p>
+    </div>`
 
-likeCountNumber.textContent = 0;
+  // create a new div element
+  const newDiv = document.createElement("div");
+  newDiv.classList.add("subsequentPosts");
 
-heartBtn.addEventListener("dblclick", function() {
-    likeCountNumber.textContent++;
-})
-
-i = 0;
-
-//for (let i = 0; i < posts.length; i++) {
-username.innerHTML = `${posts[i].username} <span id="post-comment">${posts[i].comment}</span`;
-posterName.textContent = posts[i].name;
-posterLocation.textContent = posts[i].location;
-posterAvatar.innerHTML = `<img src="${posts[i].avatar}" class="circle-image" alt="poster's avatar">`
-postImage.innerHTML =`<img class="post-image" src="${posts[i].post}" alt="poster's self-portrait">`     
-
-//}
+  // add the text node to the newly created div
+    newDiv.innerHTML = postCode;
+    postContainer.appendChild(newDiv);
+}
 
 
+function createPosts() {
+    for (let i=0; i < posts.length; i++) {
+        addElement(posts[i]);
+    }
+}
 
+createPosts ();
+
+// How do I get this function to work with all the posts?
+
+function getHearts() {
+    const heartBtn = document.getElementById("heart-btn");
+    let likeCountNumber = document.getElementById("like-count-number");
+
+    likeCountNumber.value = 0;
+
+    heartBtn.addEventListener("dblclick", function() {
+        likeCountNumber.textContent++;
+    })
+}
+
+getHearts();

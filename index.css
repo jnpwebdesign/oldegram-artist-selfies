@@ -14,7 +14,6 @@ body {
 .oldagram {
     margin: 0 auto;
     width: 375px;
-    border: 1px solid black;
     background-color: white;
 }
 
@@ -28,12 +27,23 @@ header {
     padding: 16px 0 18px 0;
 }
 
-/* note: use on subsequent post-containers:  border-top: 25px solid #EDEDED; */
+/* note: use on subsequent post-containers:   */
 #post-container {
     height: 545px;
     border-top: 1px solid lightgray;
+
 }
 
+.subsequentPosts:first-of-type {
+    background-color: white;
+    margin-top: 0;
+}
+
+.subsequentPosts {
+    background-color: white;
+    margin-top: 25px;
+   /* border-top: 25px solid #EDEDED; */
+}
 .title-container {
     padding-top: 10px;
     padding-left: 10px;
