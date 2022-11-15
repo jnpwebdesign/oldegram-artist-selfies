@@ -29,7 +29,7 @@ header {
 }
 
 /* note: use on subsequent post-containers:  border-top: 25px solid #EDEDED; */
-.post-container {
+#post-container {
     height: 545px;
     border-top: 1px solid lightgray;
 }

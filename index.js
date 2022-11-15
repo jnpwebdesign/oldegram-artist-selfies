@@ -47,13 +47,14 @@ heartBtn.addEventListener("dblclick", function() {
 
 i = 0;
 
+//for (let i = 0; i < posts.length; i++) {
 username.innerHTML = `${posts[i].username} <span id="post-comment">${posts[i].comment}</span`;
 posterName.textContent = posts[i].name;
 posterLocation.textContent = posts[i].location;
 posterAvatar.innerHTML = `<img src="${posts[i].avatar}" class="circle-image" alt="poster's avatar">`
 postImage.innerHTML =`<img class="post-image" src="${posts[i].post}" alt="poster's self-portrait">`     
 
-
+//}
 
 
 
