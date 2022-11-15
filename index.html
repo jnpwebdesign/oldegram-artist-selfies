@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Oldegram</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="oldagram">
+            <header>
+                <img class="logo" src="images/logo.png" alt="Oldegram logo">
+                <img class="user-avatar circle-image" src="images/user-avatar.png" alt="user avatar">
+            </header>
+            <section class="post-container">
+                <div class="title-container">
+                    <img class="poster-avatar circle-image" src="images/avatar-vangogh.jpg" alt=""van Gogh avatar>
+                    <div class="title-text-container">
+                        <div class="poster-name-container">
+                            <h2 class="poster-name">Vincent van Gogh</h2>
+                        </div>
+                        <div class="poster-location-container">
+                            <h3 class="poster-location">Zudert, Netherlands</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-image-container">
+                    <img class="post-image" src="images/post-vangogh.jpg" alt="van Gogh self-portrait">     
+                </div>
+                <div class="reactions-container">
+                    <div class="emoji-container">
+                        <!--<img src="images/icon-heart.png" class="emoji" id="heart">-->
+                        <div class="heart-container"></div>
+                        <img src="images/icon-comment.png" class="emoji" id="comment">
+                        <img src="images/icon-dm.png" class="emoji" id="airplane">
+                    </div>
+                    <p class="like-count"><span id="like-count-number"></span>likes</p>
+                    <p id="username">username <span id="comment">placeholder comment</span></p>
+                </div>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

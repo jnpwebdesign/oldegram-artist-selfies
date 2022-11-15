@@ -1,0 +1,169 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    background-color: lightgray;
+}
+
+.oldagram {
+    margin: 0 auto;
+    width: 375px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* containers */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    padding: 16px 0 18px 0;
+}
+
+/* note: use on subsequent post-containers:  border-top: 25px solid #EDEDED; */
+.post-container {
+    height: 545px;
+}
+
+.title-container {
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    height: 55px;
+    align-items: center;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.poster-name-container {
+    width: 307px;
+    height: 16px;
+}
+
+.poster-location-container {
+    width: 307px;
+    height: 15px;
+}
+
+
+.title-text-container {
+    margin: 0;
+    padding-left: 5px;
+}
+
+.reactions-container {
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-right: 10px;
+    height: 115px;
+    box-sizing: border-box;
+}
+.emoji-container {
+    margin: 0;
+    width: 104.34px;
+    height: 22.13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* images */
+
+.logo {
+    width: 127px;
+}
+
+.circle-image {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.post-image {
+    width: 375px;
+    height: 375px;
+}
+
+/* typography */
+
+h2 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16.34px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.like-count {
+    margin: 0;
+    padding-left: 3;
+    width: 343px;
+    height: 16px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 13px;
+}
+
+#username {
+   font-size: 13px;
+   line-height: 16.24px;
+   font-weight: 700; 
+   margin-bottom: 16px;
+   margin-top: 12px;
+}
+
+#comment {
+    font-weight: 400;
+}
+
+/* buttons */
+
+.emoji {
+
+}
+
+#heart {
+    width: 23.3px;
+    height: 22.13px;
+    border: 2.33 solid black;
+}
+
+.heart-container {
+    
+    background-image: url(images/icon-heart-23px.png);
+    width: 23.3px;
+    height: 22.13px;
+    ;
+}
+.heart-container:hover {
+
+    background-image: url(images/icon-heart-red-23px.png);
+    background-size: cover;
+    outline: none;
+}
+#comment {
+    width: 18.65px;
+    height: 18.65px;
+}
+
+#airplane {
+    width: 22.38px;
+    height: 18.65px;
+}
